@@ -44,9 +44,11 @@ class Netgear:
     def vlan_add(self, ids, name=None):
         for id in ids.split(','):
             if not name:
-                name = 'vlan-' + id.zfill(4)
+                vlan_name = 'vlan-' + id.zfill(4)
+            else:
+                vlan_name = name
             response = self.session.post('http://{host}/switching/dot1q/vlan_cfg.html'.format(**self.options.__dict__),
-                              dict(add=16, vlan_id=id, vlan_name=name, vlan_type='Static'))
+                              dict(add=16, vlan_id=id, vlan_name=vlan_name, vlan_type='Static'))
             self.check_result(response)
 
     def vlan_del(self, ids):
