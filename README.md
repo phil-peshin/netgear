@@ -63,7 +63,6 @@ $ netgear vlan membership
 20   ...U.U.U
 30   ....U.U.
 100  ...T.T.T
-101 
 ```
 
 set VLANs 102,103,104 membership, tagged ports #4,6,8
