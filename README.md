@@ -18,7 +18,7 @@ sudo python setup.py install
 PREPARE ENVIRONMENT
 -------------------
 
-Though you can pass everything in arguments, I find it conenient to set enviromnent variables
+Though you can pass everything in arguments, I find it convenient to set enviromnent variables
 ```
 export NETGEAR_HOST=192.168.1.200
 export NETGEAR_PASSWORD=password
